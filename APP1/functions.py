@@ -1,11 +1,12 @@
-def get_todo(filename = 'todos.txt'):
+FILEPATH = "todos.txt"
+def get_todo(filename = FILEPATH):
     try:
         with open(filename, 'r') as file:
             return file.readlines()
     except FileNotFoundError:
         return []
 
-def write_todo(todos, filename = 'todos.txt'):
+def write_todo(todos, filename = FILEPATH):
     with open(filename, 'w') as file:
         file.writelines(todos)
 
