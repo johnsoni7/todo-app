@@ -51,7 +51,7 @@ The helper functions:
 1. def get_todo()
 2. def write_todo()
 
-📌 Requirements
+**📌 Requirements**
 
 Python 3.x
 
@@ -60,10 +60,10 @@ FreeSimpleGUI
 **Install FreeSimpleGUI:**
 pip install FreeSimpleGUI
 
-▶️ Running the GUI App
+**▶️ Running the GUI App**
 python gui.py
 
-▶️ Running the CLI App
+**▶️ Running the CLI App**
 python cli.py
 
 
