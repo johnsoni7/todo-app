@@ -1,74 +1,122 @@
-# 📝 To-Do App (Python + FreeSimpleGUI)
+📝 To-Do App (Python: GUI + CLI + Web App)
 
-A simple and functional To-Do application built using **Python**, **FreeSimpleGUI**, and **file-based storage**.  
-This project includes **two versions** of the app:
+A complete To-Do application built in Python with three different interfaces:
 
-1. **GUI Version** – A desktop application using FreeSimpleGUI  
-2. **CLI Version** – A command-line based todo manager  
+🖥 GUI App – Built using FreeSimpleGUI
 
-Both versions use the same backend `functions.py` for reading/writing todos.
+💻 CLI App – Terminal-based todo manager
 
----
+🌐 Web App – Built using Streamlit
 
-## 🚀 Features
+All three versions share the same backend file handler: functions.py
 
-### ✅ GUI Version
-- Add new todos  
-- Edit existing todos  
-- Mark todos as complete (delete)  
-- Live clock display  
-- Automatically creates `todos.txt` if missing  
-- Buttons with icons (`add.png`, `complete.png`)  
-- Error popups when no todo is selected  
-- Smooth real-time updates
+🚀 Features
+✅ GUI Version (FreeSimpleGUI)
 
-### 🖥 CLI Version
-- Add todos  
-- Show all todos  
-- Edit todos  
-- Complete (remove) todos  
-- Input-based navigation  
-- Error handling for invalid commands  
+1. Add new todos
 
----
+2. Edit existing todos
 
-## 📂 Project Structure
+3. Mark todos as complete
+
+4. Auto-creates todos.txt if missing
+
+5. Buttons with PNG icons (add.png, complete.png)
+
+6. Live updating digital clock
+
+7. Popup warnings when no todo is selected
+
+8. Real-time list refresh
+
+🖥 CLI Version
+
+1. Add todos
+
+2. Show all todos
+
+3. Edit todos
+
+4. Complete/remove todos
+
+5. Handles invalid inputs gracefully
+
+6. Simple and lightweight
+
+🌐 Web App Version (Streamlit)
+
+1. Beautiful and interactive UI
+
+2. dd todos via text input
+
+3. Edit or delete existing todos
+
+4. Instant updates using st.session_state
+
+5. Runs entirely in the browser
+
+6. Perfect for online deployment (Streamlit Cloud)
+
+📂 Project Structure
 .
-├── gui.py # GUI Application
-├── cli.py # CLI Application
-├── functions.py # File read/write logic
-├── todos.txt # Todo storage file
-├── add.png # Add button icon
-├── complete.png # Complete button icon
-└── README.md
+├── gui.py            # Desktop GUI App (FreeSimpleGUI)
+├── cli.py            # Command-Line App
+├── web.py            # Streamlit Web App
+├── functions.py      # Shared read/write logic for todos.txt
+├── todos.txt         # Todo storage file
+├── add.png           # Add button icon
+├── complete.png      # Complete button icon
+└── README.md         # Documentation
+
+🧠 How It Works
+
+All todo items are stored inside todos.txt.
+
+functions.py provides two helper functions:
+def get_todo(filename="todos.txt"):
+    # Reads todos from file
+
+def write_todo(todos, filename="todos.txt"):
+    # Writes todos back to file
 
 
-## 🧠 How It Works
+All three app versions rely on these functions for consistent behavior.
 
-All todos are stored in **`todos.txt`**.  
-The helper functions:
+📌 Requirements
 
-1. def get_todo()
-2. def write_todo()
+Install dependencies:
 
-**📌 Requirements**
+pip install FreeSimpleGUI streamlit
 
-Python 3.x
-
-FreeSimpleGUI
-
-**Install FreeSimpleGUI:**
-
-pip install FreeSimpleGUI
-
-**▶️ Running the GUI App**
-
+▶️ Run the Apps
+GUI App
 python gui.py
 
-**▶️ Running the CLI App**
-
+CLI App
 python cli.py
 
+Web App (Streamlit)
+streamlit run web.py
+
+
+This launches the app in your browser at:
+
+http://localhost:8501
+
+🌐 Deploying the Web App Online
+
+You can deploy web.py using Streamlit Cloud:
+
+Push your repository to GitHub
+
+Visit: https://streamlit.io/deploy
+
+Select your repo
+
+Set main file to web.py
+
+Deploy 🚀
 
 ✨ Author
+
 John Soni Thomas
