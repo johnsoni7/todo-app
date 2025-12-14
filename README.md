@@ -2,7 +2,7 @@
 
 **🌐 Live Web App**
 
-👉 https://johns-todo-app.streamlit.app/
+👉 https://john-todo-app.streamlit.app/
 
 A complete To-Do application built in Python with three different interfaces:
 
