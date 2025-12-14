@@ -1,4 +1,8 @@
-📝 To-Do App (Python: GUI + CLI + Web App)
+**📝 To-Do App (Python: GUI + CLI + Web App)**
+
+**🌐 Live Web App**
+
+👉 https://johns-todo-app.streamlit.app/
 
 A complete To-Do application built in Python with three different interfaces:
 
@@ -10,8 +14,9 @@ A complete To-Do application built in Python with three different interfaces:
 
 All three versions share the same backend file handler: functions.py
 
-🚀 Features
-✅ GUI Version (FreeSimpleGUI)
+**🚀 Features**
+
+**✅ GUI Version (FreeSimpleGUI)**
 
 1. Add new todos
 
@@ -29,7 +34,7 @@ All three versions share the same backend file handler: functions.py
 
 8. Real-time list refresh
 
-🖥 CLI Version
+**🖥 CLI Version**
 
 1. Add todos
 
@@ -43,7 +48,7 @@ All three versions share the same backend file handler: functions.py
 
 6. Simple and lightweight
 
-🌐 Web App Version (Streamlit)
+**🌐 Web App Version (Streamlit)**
 
 1. Beautiful and interactive UI
 
@@ -57,7 +62,7 @@ All three versions share the same backend file handler: functions.py
 
 6. Perfect for online deployment (Streamlit Cloud)
 
-📂 Project Structure
+**📂 Project Structure**
 .
 ├── gui.py            # Desktop GUI App (FreeSimpleGUI)
 ├── cli.py            # Command-Line App
@@ -68,7 +73,7 @@ All three versions share the same backend file handler: functions.py
 ├── complete.png      # Complete button icon
 └── README.md         # Documentation
 
-🧠 How It Works
+**🧠 How It Works**
 
 All todo items are stored inside todos.txt.
 
@@ -82,7 +87,7 @@ def write_todo(todos, filename="todos.txt"):
 
 All three app versions rely on these functions for consistent behavior.
 
-📌 Requirements
+**📌 Requirements**
 
 Install dependencies:
 
